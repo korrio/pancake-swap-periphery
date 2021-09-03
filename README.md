@@ -1,6 +1,6 @@
 # Pancake Router
 
-## INIT_CODE_PAIR_HASH
+## Prepare INIT_CODE_PAIR_HASH
 - Get `INIT_CODE_PAIR_HASH` from your `PancakeFactory` contract
 - Put `INIT_CODE_PAIR_HASH` to `pairFor` function's 4th parameter in `contracts/libraries/PancakeLibrary.sol`
 - Example:
@@ -15,5 +15,15 @@
             ))));
     }
 `
+
+## Instruction
+- `truffle init`
+- Press N, enter, N, enter.
+- add `.secret` to root directory of project
+- Prepare `truffle-config.js` by adding `kovan` provider
+- `truffle compile`
+- `truffle deploy --network kovan`
+- `truffle run verify PancakeFactory --network kovan`
+
 
 
